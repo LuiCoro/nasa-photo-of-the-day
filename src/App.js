@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 
 import NasaImage from './components/Nasa_img';
+import Details from './components/Details';
 
 function App() {
 	const [data, setData] = useState({});
@@ -27,11 +28,7 @@ function App() {
 		<div className='App'>
 			<h1>NASA's Picure Of The Day!</h1>
 			<NasaImage url={data.url} noImage={data.title} />
-			{/* <img src={data.url} alt={data.title} /> */}
-			<h2>Name: {data.title}</h2>
-			<h3>{data.date}</h3>
-			<p>{data.explanation}</p>
-			<p>Copyright: {data.copyright}</p>
+			<Details name={data.title} date={data.date} detail={data.explanation} />
 		</div>
 	);
 }
