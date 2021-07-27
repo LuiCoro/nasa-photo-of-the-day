@@ -28,6 +28,7 @@ function App() {
 			<h2>Name: {data.title}</h2>
 			<h3>{data.date}</h3>
 			<p>{data.explanation}</p>
+			<p>Copyright: {data.copyright}</p>
 		</div>
 	);
 }
