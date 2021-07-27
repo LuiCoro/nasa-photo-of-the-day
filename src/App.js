@@ -25,6 +25,9 @@ function App() {
 		<div className='App'>
 			<h1>NASA's Picure Of The Day!</h1>
 			<img src={data.url} alt={data.title} />
+			<h2>Name: {data.title}</h2>
+			<h3>{data.date}</h3>
+			<p>{data.explanation}</p>
 		</div>
 	);
 }
