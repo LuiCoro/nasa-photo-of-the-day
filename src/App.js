@@ -14,6 +14,7 @@ const CardBoarder = styled.div`
 	width: 450px;
 	color: blue;
 	font-size: 30px;
+	background-color: rgb(115, 115, 115);
 `;
 
 const Card = styled.div`

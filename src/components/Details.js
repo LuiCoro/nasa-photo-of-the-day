@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Styling
 
 const CardTitle = styled.h3`
-	color: grey;
+	color: rgb(224, 224, 224);
 `;
 
 const CardText = styled.p`
