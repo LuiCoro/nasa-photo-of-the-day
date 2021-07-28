@@ -1,11 +1,18 @@
 import React from 'react';
-import { CardSubtitle, CardText } from 'reactstrap';
 import styled from 'styled-components';
 
 // Styling
 
 const CardTitle = styled.h3`
-	color: blue;
+	color: grey;
+`;
+
+const CardText = styled.p`
+	color: red;
+`;
+
+const CardDate = styled.h4`
+	color: purple;
 `;
 
 const Details = props => {
@@ -13,10 +20,10 @@ const Details = props => {
 
 	return (
 		<div>
-			<CardSubtitle tag='h3'>Name: {name}</CardSubtitle>
-			<CardText color='info' tag='p'>
-				<CardTitle>{date}</CardTitle>
-				<>{detail}</>
+			<CardTitle>Name: {name}</CardTitle>
+			<CardText>
+				<CardDate>{date}</CardDate>
+				{!detail ? 'No Details Sorry!' : `${detail}`}
 			</CardText>
 		</div>
 	);

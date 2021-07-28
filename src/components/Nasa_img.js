@@ -1,11 +1,12 @@
 import React from 'react';
+import { CardImg } from 'reactstrap';
 
 function Nasaimage(props) {
 	const { url } = props;
 	const { noImage } = props;
 	return (
 		<div>
-			<img src={url} alt={noImage} />
+			<CardImg top width='400' src={url} alt={noImage} />
 		</div>
 	);
 }
